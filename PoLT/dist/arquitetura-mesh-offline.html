@@ -1,0 +1,196 @@
+<!DOCTYPE html> <html lang="pt-br"><head>
+<title>Arquitetura Mesh Offline</title>
+<base href=".">
+<meta name="pathname" content="arquitetura-mesh-offline.html">
+<meta name="description" content="Nova pasta - Arquitetura Mesh Offline">
+<meta property="og:title" content="Arquitetura Mesh Offline">
+<meta property="og:description" content="Nova pasta - Arquitetura Mesh Offline">
+<meta property="og:type" content="website">
+<meta property="og:url" content="arquitetura-mesh-offline.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Nova pasta"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/assets/rss-DSk1-ED4.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="/assets/favicon-CjKTC2Np.png"><noscript></noscript><noscript></noscript><noscript></noscript><noscript></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script>  <link rel="stylesheet" crossorigin href="/assets/main-styles-DYo2Msmg.css">
+</head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="/assets/file-tree-content-7X83qZi9.html"></div></div><script defer="">{ let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width")); }</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><pre class="frontmatter language-yaml" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">tags</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> finder/Blockchain
+  <span class="token punctuation">-</span> finder/PoLT
+  <span class="token punctuation">-</span> finder/Arquitetura
+  <span class="token punctuation">-</span> finder/Bluetooth
+<span class="token key atrule">area</span><span class="token punctuation">:</span> projetos
+<span class="token key atrule">status</span><span class="token punctuation">:</span> ideia
+<span class="token key atrule">Autor</span><span class="token punctuation">:</span> Jorge Paim</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="Arquitetura_Mesh_Offline_0">Arquitetura Mesh Offline</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Visão geral da solução" dir="auto" class="heading" id="Visão_geral_da_solução_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Visão geral da solução</h1></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>Rede offline: dispositivos formam uma <strong>mesh P2P via BLE/libp2p</strong> (até ~50 nodes em área).</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>Transações: criações P2P entre sender→receiver via BLE.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>Validação local: um subset dinâmica de dispositivos na mesh (eleitos automaticamente) assina a tx. Requer <strong>k assinaturas</strong> (p.ex. k=5).</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>Agregação + bloco local: validadores agregam txs num <strong>Local Block (LB)</strong> e produzem um <strong>agg_sig</strong> (BLS threshold).</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p>Sync para online: assim que qualquer nó da mesh encontra internet, <strong>submete o LB</strong> (merkle_root + agg_sig) à blockchain global.</p>
+</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>
+<p>Blockchain global: recomenda-se <strong>PoS</strong> (menos custo energético, finalidades rápidas) ou usar uma L1 compatível/EVM/Substrate para facilidade.</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Componentes e tecnologias recomendadas" dir="auto" class="heading" id="Componentes_e_tecnologias_recomendadas_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Componentes e tecnologias recomendadas</h1></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>BLE + libp2p (mesh).</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>Chaves efêmeras + ED25519 (assinatura local) + BLS threshold para agregação on-chain.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>Wallet local com <code>local_nonce</code> e cache de locks.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>Mini-node (VL) leve em Rust/Go para validar e submeter LBs.</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p>Chain de destino: <strong>PoS L1</strong> ou L2 (submeter merkle_root/agg_sig).</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Fluxo (alto nível — 7 passos)" dir="auto" class="heading" id="Fluxo_(alto_nível_—_7_passos)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Fluxo (alto nível — 7 passos)</h1></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p>Sender gera TX (tx_hash = H(sender_pub || nonce || amount || ts || meta)) e envia ao Receiver via BLE.</p>
+</li>
+<li data-line="2" dir="auto">
+<p>Receiver broadcast na mesh um <em>sign request</em> com <code>tx_hash</code> + <code>local_nonce</code>.</p>
+</li>
+<li data-line="4" dir="auto">
+<p>N dispositivos automáticos checam regras (saldo provisório, rate-limit, prova proximidade) e, se OK, assinam com chave efêmera e respondem com <code>sig_meta</code> (device_hash, rssi, ts, sig).</p>
+</li>
+<li data-line="6" dir="auto">
+<p>Quando Receiver coleta ≥k sig_meta válidas e distintas, forma LB (insere TX) e cria <code>agg_sig</code> (threshold BLS) — LB tem merkle_root. Gera <code>temporary_lock</code>.</p>
+</li>
+<li data-line="8" dir="auto">
+<p>LB fica salvo localmente; todos os nodes da mesh sincronizam LB entre si (gossip).</p>
+</li>
+<li data-line="10" dir="auto">
+<p>Quando um node obtém internet, ele pega LBs não-sincronizados e submete (merkle_root + agg_sig + validator_commitments) à blockchain global via API.</p>
+</li>
+<li data-line="12" dir="auto">
+<p>Rede global verifica agg_sig, valida nonces contra ledger e abre challenge window. Se tudo ok, grava hash do LB e confirma txs globalmente.</p>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Como eleger validadores entre 50 usuários (permissionless, justo)" dir="auto" class="heading" id="Como_eleger_validadores_entre_50_usuários_(permissionless,_justo)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Como eleger validadores entre 50 usuários (permissionless, justo)</h1></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p>Eleição automática por <strong>VRF (verifiable random function)</strong> + peso por <code>Trust Score</code>:</p>
+<ul class="has-list-bullet">
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>Cada nó gera uma saída VRF em cada epoch; se VRF &lt; threshold(node_TS, epoch), o nó é candidato validador.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>Isso distribui validação ao acaso, mas favorece quem provou honestidade.</p>
+</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>Alternativa simples: seleção randômica por shuffle determinístico da lista de peers + pick first k.</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Mitigações essenciais (Sybil, replay, colusão)" dir="auto" class="heading" id="Mitigações_essenciais_(Sybil,_replay,_colusão)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Mitigações essenciais (Sybil, replay, colusão)</h1></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p><strong>Nonce monotônico na wallet</strong> + checagem local.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p><strong>k assinaturas distintas</strong> + device_id_hash diversity check (não aceitar múltiplos sigs do mesmo device).</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p><strong>Rate-limits</strong> por device e limitação de recompensa.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p><strong>Locks temporários</strong> (TTL curto) publicados em batch para chain (reduz double-spend).</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p><strong>Janela de challenge</strong> (p.ex. 48 h) e slashing/reputational penalty se prova.</p>
+</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>
+<p><strong>Heurísticas anti-bot</strong> (assinaturas em massa do mesmo coordenador/geo-hash).</p>
+</li>
+<li data-line="12" dir="auto"><span class="list-bullet"></span>
+<p><strong>BLS threshold</strong> para reduzir footprint on-chain.</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Recomendação sobre PoW vs PoS" dir="auto" class="heading" id="Recomendação_sobre_PoW_vs_PoS_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Recomendação sobre PoW vs PoS</h1></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p><strong>PoS</strong> é melhor aqui: menor custo, confirmações mais rápidas e mais fácil integrar slashing/reputação.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>PoW adiciona barreira energética e latência — não ajuda o offline use-case.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>Ideal: submeter LBs a uma <strong>PoS L1</strong> (ou L2 rollup) que aceite provas compactas (merkle_root + agg_sig).</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Pseudocódigo compacto (mensagens BLE, assinatura, criação de LB e sync)" dir="auto" class="heading" id="Pseudocódigo_compacto_(mensagens_BLE,_assinatura,_criação_de_LB_e_sync)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Pseudocódigo compacto (mensagens BLE, assinatura, criação de LB e sync)</h1></div><div class="el-pre"><pre class="language-pseudo"><code data-line="0" class="language-pseudo is-loaded">// --- on Sender ---
+tx = {sender_pub, receiver_pub, amount, local_nonce, ts}
+tx_hash = H(tx)
+send_ble(receiver_id, {type: "TX_OFFER", tx, tx_hash})
+
+// --- on Receiver ---
+on_receive(TX_OFFER):
+  if wallet.provisional_balance &gt;= amount and nonce_ok:
+    broadcast_mesh({type:"SIGN_REQUEST", tx_hash, nonce})
+    sigs = []
+    while sigs.count &lt; k and timeout not reached:
+      wait incoming SIGN_RESPONSE
+      if valid_sig(response): sigs.append(response)
+    if sigs.count &gt;= k:
+      agg_sig = BLS_aggregate(sigs)
+      LB = create_local_block([tx], merkle_root(...), agg_sig, validators_meta)
+      store_local(LB)
+      create_temporary_lock(tx.sender, tx.amount, TTL)
+      gossip_mesh({type:"NEW_LB", LB})
+
+// --- on any Node with Internet ---
+periodic_sync():
+  for each LB in local_storage not yet submitted:
+    payload = {merkle_root: LB.merkle_root, agg_sig: LB.agg_sig, meta: LB.validators_meta}
+    resp = submit_to_chain(payload)
+    if resp.accepted:
+      mark_confirmed(LB)
+    else if resp.dispute:
+      open_challenge_procedure(LB)
+
+// --- Validator auto-signing (BLE listener) ---
+on_receive(SIGN_REQUEST):
+  if passes_checks(nonce, rate_limit, proximity, local_cache):
+    sig = sign_with_ephemeral_key(tx_hash)
+    send_ble(originator, {type:"SIGN_RESPONSE", device_hash, rssi, ts, sig})
+</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Parâmetros práticos sugeridos (iniciar)" dir="auto" class="heading" id="Parâmetros_práticos_sugeridos_(iniciar)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Parâmetros práticos sugeridos (iniciar)</h1></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>network size target: 50 nodes (ok).</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>k (assinaturas) padrão urbano = <strong>5</strong>.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>rate-limit por device = <strong>20</strong> assinaturas recompensadas/dia.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>temporary_lock TTL = <strong>30–90 minutos</strong>.</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p>challenge window = <strong>48 horas</strong>.</p>
+</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>
+<p>stake opcional para acelerar reputação; mas permissionless por padrão.</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h1"><h1 data-heading="Próximos passos práticos se queres protótipo" dir="auto" class="heading" id="Próximos_passos_práticos_se_queres_protótipo_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Próximos passos práticos se queres protótipo</h1></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p>Prototipar wallet mobile (React Native) que cria txs e faz BLE gossip.</p>
+</li>
+<li data-line="2" dir="auto">
+<p>Implementar listener simples (NodeJS/Go) que age como validator e testa coleta de k sigs.</p>
+</li>
+<li data-line="4" dir="auto">
+<p>Testnet local: montar uma L1 Substrate/PoS local para submeter merkle_roots.</p>
+</li>
+<li data-line="6" dir="auto">
+<p>Simular ataques Sybil/colusão para ajustar parâmetros.</p>
+</li>
+</ol></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Arquitetura_Mesh_Offline_0" data-path="#Arquitetura_Mesh_Offline_0"><div class="tree-item-inner heading-link" heading-name="Arquitetura Mesh Offline">Arquitetura Mesh Offline</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Visão_geral_da_solução_0" data-path="#Visão_geral_da_solução_0"><div class="tree-item-inner heading-link" heading-name="Visão geral da solução">Visão geral da solução</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Componentes_e_tecnologias_recomendadas_0" data-path="#Componentes_e_tecnologias_recomendadas_0"><div class="tree-item-inner heading-link" heading-name="Componentes e tecnologias recomendadas">Componentes e tecnologias recomendadas</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Fluxo_(alto_nível_—_7_passos)_0" data-path="#Fluxo_(alto_nível_—_7_passos)_0"><div class="tree-item-inner heading-link" heading-name="Fluxo (alto nível — 7 passos)">Fluxo (alto nível — 7 passos)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Como_eleger_validadores_entre_50_usuários_(permissionless,_justo)_0" data-path="#Como_eleger_validadores_entre_50_usuários_(permissionless,_justo)_0"><div class="tree-item-inner heading-link" heading-name="Como eleger validadores entre 50 usuários (permissionless, justo)">Como eleger validadores entre 50 usuários (permissionless, justo)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Mitigações_essenciais_(Sybil,_replay,_colusão)_0" data-path="#Mitigações_essenciais_(Sybil,_replay,_colusão)_0"><div class="tree-item-inner heading-link" heading-name="Mitigações essenciais (Sybil, replay, colusão)">Mitigações essenciais (Sybil, replay, colusão)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Recomendação_sobre_PoW_vs_PoS_0" data-path="#Recomendação_sobre_PoW_vs_PoS_0"><div class="tree-item-inner heading-link" heading-name="Recomendação sobre PoW vs PoS">Recomendação sobre PoW vs PoS</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Pseudocódigo_compacto_(mensagens_BLE,_assinatura,_criação_de_LB_e_sync)_0" data-path="#Pseudocódigo_compacto_(mensagens_BLE,_assinatura,_criação_de_LB_e_sync)_0"><div class="tree-item-inner heading-link" heading-name="Pseudocódigo compacto (mensagens BLE, assinatura, criação de LB e sync)">Pseudocódigo compacto (mensagens BLE, assinatura, criação de LB e sync)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Parâmetros_práticos_sugeridos_(iniciar)_0" data-path="#Parâmetros_práticos_sugeridos_(iniciar)_0"><div class="tree-item-inner heading-link" heading-name="Parâmetros práticos sugeridos (iniciar)">Parâmetros práticos sugeridos (iniciar)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Próximos_passos_práticos_se_queres_protótipo_0" data-path="#Próximos_passos_práticos_se_queres_protótipo_0"><div class="tree-item-inner heading-link" heading-name="Próximos passos práticos se queres protótipo">Próximos passos práticos se queres protótipo</div></a><div class="tree-item-children"></div></div></div></div></div><script defer="">{ let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width")); }</script></div></div></div></div></body></html>

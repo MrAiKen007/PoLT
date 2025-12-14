@@ -1,0 +1,327 @@
+<!DOCTYPE html> <html lang="pt-br"><head>
+<title>Whitepaper Tecnico v1</title>
+<base href=".">
+<meta name="pathname" content="whitepaper-tecnico-v1.html">
+<meta name="description" content="Nova pasta - Whitepaper Tecnico v1">
+<meta property="og:title" content="Whitepaper Tecnico v1">
+<meta property="og:description" content="Nova pasta - Whitepaper Tecnico v1">
+<meta property="og:type" content="website">
+<meta property="og:url" content="whitepaper-tecnico-v1.html">
+<meta property="og:image" content="undefined">
+<meta charset="UTF-8"><meta property="og:site_name" content="Nova pasta"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0"><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/assets/rss-DSk1-ED4.xml"><script async="" id="webpage-script" src="site-lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-wasm-script" src="site-lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="site-lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="/assets/favicon-CjKTC2Np.png"><noscript></noscript><noscript></noscript><noscript></noscript><noscript></noscript><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-vertical-spacing:1.3em;--sidebar-margin:12px}:root{background-color:#202124}.sidebar{height:100%;font-size:14px;z-index:10;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));position:relative;overflow:hidden;overflow:clip;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}#left-sidebar{left:0}#right-sidebar{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}.sidebar.floating{position:absolute}.sidebar .leaf-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .leaf-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}#left-sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}#right-sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar #left-sidebar-content,.sidebar #right-sidebar-content{contain:none!important;container-type:normal!important;animation:none!important}.sidebar:has(.leaf-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:calc(2.3em + 2 * var(--sidebar-margin));width:var(--sidebar-width);padding:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}#left-sidebar .sidebar-topbar{left:0;flex-direction:row;border-top-right-radius:var(--radius-l)}#right-sidebar .sidebar-topbar{right:0;flex-direction:row-reverse;border-top-left-radius:var(--radius-l)}#left-sidebar .topbar-content{margin-right:calc(2.3em + var(--sidebar-margin));flex-direction:row}#right-sidebar .topbar-content{margin-left:calc(2.3em + var(--sidebar-margin));flex-direction:row-reverse}.topbar-content{overflow:hidden visible;overflow:clip visible;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:2px!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}#left-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}#right-sidebar .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.feature-title{margin-left:1px;text-transform:uppercase;letter-spacing:.06em;margin-top:.75em;margin-bottom:.75em}.feature-header{display:flex;align-items:center;padding-top:0;font-size:1em;padding-left:0}body.floating-sidebars .sidebar{position:absolute}body{transition:background-color var(--color-fade-speed) ease-in-out}#navbar:not(:empty){display:flex;align-items:center;justify-content:space-between;padding:.5em 1em;width:100%}#main{display:flex;flex-direction:column;height:100%;width:100%;align-items:stretch;justify-content:center}#main-horizontal{display:flex;flex-direction:row;flex-grow:1;width:100%;align-items:stretch;justify-content:center}#center-content{flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0!important;transition:opacity .2s ease-in-out;pointer-events:none}#center-content>.obsidian-document{padding-left:2em;padding-right:1em;margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}body #center-content>.obsidian-document>.markdown-preview-sizer{padding-bottom:80vh;width:100%;max-width:var(--line-width);flex-basis:var(--line-width);transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document>div{width:100%!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}#center-content>.obsidian-document:not([data-type=markdown]).embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}#center-content>.obsidian-document:not([data-type=markdown]).embed>*{max-width:100%;max-height:100%;object-fit:contain}:not(h1,h2,h3,h4,h5,h6,li):has(> :is(.math,table)){overflow-x:auto!important}#center-content>.obsidian-document:not([data-type=markdown]){overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.obsidian-document[data-type=attachment]{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;width:100%}.obsidian-document[data-type=attachment]>*{outline:0;border:none;box-shadow:none}.obsidian-document[data-type=attachment] :is(img){max-width:90%;max-height:90%;object-fit:contain}.obsidian-document[data-type=attachment]>:is(audio){width:100%;max-width:min(90%,var(--line-width))}.obsidian-document[data-type=attachment]>:is(embed,iframe,video){width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain}.canvas-wrapper>:is(.header,.footer){z-index:100;position:absolute;display:flex;justify-content:center;flex-direction:column;width:100%;align-items:center}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){let e=document.querySelectorAll("link[itemprop='include']");for(const t of e){let e=t.getAttribute("href");try{let o="";if(e.startsWith("https:")||e.startsWith("http:")||"file:"!=window.location.protocol){const n=await fetch(e);if(!n.ok){console.log("Could not include file: "+e),t?.remove();continue}o=await n.text()}else{const t=document.getElementById(btoa(encodeURI(e)));if(t){const e=JSON.parse(decodeURI(atob(t.getAttribute("value")??"")));o=e?.data??""}}let n=document.createRange().createContextualFragment(o);t.before(n),t.remove(),console.log("Included text: "+o),console.log("Included file: "+e)}catch(o){t?.remove(),console.log("Could not include file: "+e,o);continue}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script")));!function e(n){let l=o[n],c=n+1;l?(l&&"true"!=l.getAttribute("loaded")||n<o.length&&e(c),n<o.length&&l.addEventListener("load",(()=>e(c)))):n<o.length?e(c):t()}(0)}</script>  <link rel="stylesheet" crossorigin href="/assets/main-styles-DYo2Msmg.css">
+</head><body class="publish css-settings-manager styled-scrollbars show-inline-title show-ribbon is-focused"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="parsed-feature-container" style="display: contents;"></div><div id="main"><div id="navbar"></div><div id="main-horizontal"><div id="left-content" class="leaf" style="--sidebar-width: var(--sidebar-width-left);"><div id="left-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><div id="search-container"><div id="search-wrapper"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div aria-label="Clear search" id="search-clear-button"></div></div></div></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="left-sidebar-content" class="leaf-content"><link itemprop="include" href="/assets/file-tree-content-7X83qZi9.html"></div></div><script defer="">{ let ls = document.querySelector("#left-sidebar"); ls.classList.toggle("is-collapsed", window.innerWidth < 768); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width")); }</script></div></div><div id="center-content" class="leaf"><div class="obsidian-document markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings allow-fold-lists show-indentation-guide show-properties" data-type="markdown"><style id="MJX-CHTML-styles"></style><pre class="frontmatter language-yaml" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">tags</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> finder/Blockchain
+  <span class="token punctuation">-</span> finder/PoLT
+  <span class="token punctuation">-</span> finder/Whitepaper
+<span class="token key atrule">area</span><span class="token punctuation">:</span> projetos
+<span class="token key atrule">status</span><span class="token punctuation">:</span> ideia
+<span class="token key atrule">Autor</span><span class="token punctuation">:</span> Jorge Paim</code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre><div class="markdown-preview-sizer markdown-preview-section"><div class="header"><h1 class="page-title heading inline-title" id="Whitepaper_Tecnico_v1_0">Whitepaper Tecnico v1</h1><div class="data-bar"></div></div><div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div><div class="el-h1"><h1 data-heading="Proof of Local Trust (PoLT) — Whitepaper inicial (resumo técnico)" dir="auto" class="heading" id="Proof_of_Local_Trust_(PoLT)_—_Whitepaper_inicial_(resumo_técnico)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Proof of Local Trust (PoLT) — Whitepaper inicial (resumo técnico)</h1></div><div class="el-h2"><h2 data-heading="1. Visão geral" dir="auto" class="heading" id="1._Visão_geral_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>1. Visão geral</h2></div><div class="el-p"><p dir="auto">PoLT é um protocolo de consenso híbrido pensado para <strong>pagamentos offline + economia local</strong>, onde <em>validadores locais</em> (representantes comunitários) ganham poder de validação com base em <strong>Trust Score</strong> (reputação local) e colaboram com a cadeia global para evitar double-spend e manter segurança.</p></div><div class="el-p"><p dir="auto">Objetivos principais:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>Permitir pagamentos entre pares sem conexão contínua.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>Preservar segurança global ao sincronizar blocos locais.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>Incentivar participação social (voluntariado, serviços) como moeda social.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>Ser leve para dispositivos móveis e suportar comunicações Bluetooth / mesh / QR.</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="2. Componentes principais" dir="auto" class="heading" id="2._Componentes_principais_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>2. Componentes principais</h2></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p><strong>Usuários (U)</strong> — portadores de wallets com chaves privadas.</p>
+</li>
+<li data-line="2" dir="auto">
+<p><strong>Validadores Locais (VL)</strong> — nós comunitários (p.ex. vendedores, ONGs, escolas) com boa Trust Score.</p>
+</li>
+<li data-line="4" dir="auto">
+<p><strong>Mininó (MN)</strong> — dispositivo móvel que cria e guarda transações locais.</p>
+</li>
+<li data-line="6" dir="auto">
+<p><strong>Bloco Local (LB)</strong> — agrupamento de transações offline assinado por um conjunto de validadores locais.</p>
+</li>
+<li data-line="8" dir="auto">
+<p><strong>Rede Global (RG)</strong> — L1/L2 principal que recebe e armazena LBs como provas.</p>
+</li>
+<li data-line="10" dir="auto">
+<p><strong>Oráculos de Confirmação (OC)</strong> — serviços (descentralizados) que verificam provas externas (ex: dados de energia, ações sociais).</p>
+</li>
+<li data-line="12" dir="auto">
+<p><strong>Ledger Global (GL)</strong> — blockchain global que registra hashes dos LBs e confirma transações finalizadas.</p>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="3. Estrutura de dados (simplificada)" dir="auto" class="heading" id="3._Estrutura_de_dados_(simplificada)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>3. Estrutura de dados (simplificada)</h2></div><div class="el-p"><p dir="auto"><strong>Transação Offline (TO):</strong></p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>tx_id = H(pubkey_sender || nonce || amount || timestamp || metadata)</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>sender_pubkey, receiver_pubkey</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>amount</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>local_nonce (monotônico por wallet local)</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p>timestamp_local</p>
+</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>
+<p>signature_sender</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto"><strong>Mini-bloco local (LB):</strong></p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>lb_id = H(prev_lb_hash || timestamp || merkle_root(transactions) || validator_signatures)</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>transactions[] (list of TO)</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>validator_signatures[] (sig of each VL que aprovou o LB)</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>attestation_metadata (local group id, geo-hash opcional)</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto"><strong>Entradas no Ledger Global:</strong></p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>registro: (lb_id, merkle_root, validator_commitment, sync_timestamp, global_signature)</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="4. Trust Score (TS)" dir="auto" class="heading" id="4._Trust_Score_(TS)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>4. Trust Score (TS)</h2></div><div class="el-p"><p dir="auto">Trust Score é numérico (por exemplo 0–10,000) e recalculado periodicamente.</p></div><div class="el-p"><p dir="auto">Fontes de aumento:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>transações validadas (peso leve)</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>tempo de operação sem reporte de fraude (peso médio)</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>avaliações P2P (votos positivos)</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>validação de oráculos externos (p.ex. participação social)</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto">Penalidades:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>transações revertidas por double-spend</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>taxas de disputa vencidas</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>reports com evidência</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto">Fórmula base (exemplo):<br>
+TS_new = TS_old + α <em>valid_tx + β</em> uptime + γ <em>positive_votes − δ</em> fraud_penalties<br>
+(α,β,γ,δ parâmetros ajustáveis por governance)</p></div><div class="el-p"><p dir="auto">Trust Score é atestado por assinaturas de múltiplos nodes e colocado no perfil do validador.</p></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="5. Fluxo de pagamento offline (alto nível)" dir="auto" class="heading" id="5._Fluxo_de_pagamento_offline_(alto_nível)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>5. Fluxo de pagamento offline (alto nível)</h2></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p>Sender cria TO, assina com chave privada.</p>
+</li>
+<li data-line="2" dir="auto">
+<p>Sender transmite TO via Bluetooth/NFC/QR para Receiver.</p>
+</li>
+<li data-line="4" dir="auto">
+<p>Receiver checa local_nonce + saldo local contabilizado (wallet offline mantém “estado provisório”).</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p>Um conjunto de ≥k validadores locais (por proximidade/participação) assinam a TO, formando prova local.</p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span>k pode variar por segurança (p.ex. 3).</li>
+</ul>
+</li>
+<li data-line="10" dir="auto">
+<p>TO entra no LB local e é dada confirmação <em>local</em> (wallets podem aceitar pagamento com confirmação local).</p>
+</li>
+<li data-line="12" dir="auto">
+<p>Ao reconectar, o MN (ou VL) submete LB para Rede Global.</p>
+</li>
+<li data-line="14" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p>Rede Global verifica:</p>
+<ul class="has-list-bullet">
+<li data-line="16" dir="auto"><span class="list-bullet"></span>
+<p>assinaturas dos validadores (e TS mínima),</p>
+</li>
+<li data-line="18" dir="auto"><span class="list-bullet"></span>
+<p>ausência de double-spend (checa nonces e histórico global),</p>
+</li>
+<li data-line="20" dir="auto"><span class="list-bullet"></span>
+<p>se ok → grava hash do LB no GL (finalidade).</p>
+</li>
+</ul>
+</li>
+<li data-line="22" dir="auto">
+<p>Se houver conflito (double-spend identificado), aplica regras de disputa (ver abaixo).</p>
+</li>
+</ol></div><div class="el-p"><p dir="auto">Observação: até sincronização, estados são <em>provisionais</em>; aplicações podem decidir nível de confiança aceitável (ex: loja aceita com 1 validação; mercado exige LB gravado na rede).</p></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="6. Anti–Double-Spending e resolução de conflitos" dir="auto" class="heading" id="6._Anti–Double-Spending_e_resolução_de_conflitos_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>6. Anti–Double-Spending e resolução de conflitos</h2></div><div class="el-p"><p dir="auto">Mecanismos combinados:</p></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p><strong>Local nonces</strong>: cada wallet offline mantém um contador monotônico. Validadores exigem nonce correto.</p>
+</li>
+<li data-line="2" dir="auto">
+<p><strong>Multi-sig local (k-of-n)</strong>: exige assinatura de múltiplos VLs para cada TO; dificulta gasto duplicado por um único nó comprometido.</p>
+</li>
+<li data-line="4" dir="auto">
+<p><strong>Timeout &amp; lock</strong>: quando uma TO é assinada localmente, a wallet pode publicar um <em>temporary lock</em> na rede (pequena prova que ocupa um espaço no GL sem custo alto) — opcional.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>
+<p><strong>Reconciliation on sync</strong>:</p>
+<ul class="has-list-bullet">
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p>Ao receber LBs, RG checa para cada tx se já existe gasto globalmente.</p>
+</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>
+<p>Conflitos: resolve por <em>timestamp_global</em> + <em>Trust Score weight</em> dos validadores; pode reverter transações menos confiáveis ou penalizar VLs culpados.</p>
+</li>
+</ul>
+</li>
+<li data-line="12" dir="auto">
+<p><strong>Challenge window</strong>: janela (ex: 24–72h) após LB submission onde disputas podem ser abertas; provas e testemunhas (logs Bluetooth, receipts) são aceitas como evidência.</p>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="7. Incentivos e Tokenomics" dir="auto" class="heading" id="7._Incentivos_e_Tokenomics_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>7. Incentivos e Tokenomics</h2></div><div class="el-p"><p dir="auto">Token nativo (POLT) funções:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>pagamento de taxas de sincronização</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>recompensa para VLs (por validação e honestidade)</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>staking para candidatar-se a VL</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>comprar reputação/votes em governance</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto">Modelo:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>VL stake mínimo S_min para participar.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>Recompensa por LB validado = base_reward + fee_share.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>Penalidade: stake slashing quando fraude comprovada.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>Parte das taxas vai para fundo comunitário (governance local).</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto">Monetização para fundadores/operadores:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>reservas iniciais do token (vesting)</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>taxas de integração com empresas/merchants</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>venda de serviços de nó/hosting para regiões sem infraestrutura</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="8. Segurança — ameaças e proteções" dir="auto" class="heading" id="8._Segurança_—_ameaças_e_proteções_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>8. Segurança — ameaças e proteções</h2></div><div class="el-p"><p dir="auto">Principais ameaças:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p><strong>Sybil</strong> (criar muitos nós falsos) → mitigado por stake + verificação social + oráculos.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p><strong>Collusão de validadores locais</strong> → mitigado por k-of-n, penalidades e verificação externa.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p><strong>Reprodução de transações offline (replay)</strong> → nonces + timestamps + merkle proofs.</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p><strong>Ataque de sincronização adversária</strong> → nós honestos com maior TS e oráculos escalonam.</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p><strong>Falsificação de evidências</strong> → aceitar apenas provas assinadas criptograficamente (logs assinado, receipts).</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto">Boas práticas:</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>usar ED25519 para assinaturas</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>SHA-3/Keccak para hashing</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>relógio seguro com drift mitigation (tolerância de tempo)</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>usar oráculos descentralizados para dados externos quando necessário</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="9. Regras de governança e parâmetros ajustáveis" dir="auto" class="heading" id="9._Regras_de_governança_e_parâmetros_ajustáveis_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>9. Regras de governança e parâmetros ajustáveis</h2></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>Parâmetros (k, S_min, slashing rates, challenge window) ajustáveis via DAO local/global.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>Governança multi-nível: decisões locais por comunidades; mudanças de protocolo por voto global ponderado por TS e stake.</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="10. APIs e interfaces (MVP)" dir="auto" class="heading" id="10._APIs_e_interfaces_(MVP)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>10. APIs e interfaces (MVP)</h2></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p><strong>Wallet mobile</strong>: gerar tx offline, view provisional balance, sync LB.</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p><strong>VL node</strong>: recebe TOs via BLE/mesh, verifica, assina, cria LB, submete.</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p><strong>Sync API</strong>: endpoint para enviar LB ao RG; resposta com status (accepted / rejected / dispute).</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p><strong>Explorer</strong>: view global de LBs e Trust Scores.</p>
+</li>
+</ul></div><div class="el-p"><p dir="auto">Exemplos endpoints (simplificados):</p></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>POST /lb/submit {lb, proof} -&gt; {status, lb_hash}</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>GET /tx/{tx_id} -&gt; {status, confirmations, lb_hash}</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>POST /dispute {evidence} -&gt; {status}</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="11. Tecnologia sugerida (stack)" dir="auto" class="heading" id="11._Tecnologia_sugerida_(stack)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>11. Tecnologia sugerida (stack)</h2></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p><strong>Client / Wallet</strong>: React Native (mobile), libs: libsodium / tweetnacl (crypto)</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p><strong>VL Node</strong>: lightweight Go / Rust binary (para baixo consumo)</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p><strong>Comm channels</strong>: Bluetooth Low Energy, libp2p (mesh), QR fallback</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p><strong>Global Chain</strong>: Substrate (Polkadot) ou TON/EVM-compatible as L1 — facilita criar L2 custom</p>
+</li>
+<li data-line="8" dir="auto"><span class="list-bullet"></span>
+<p><strong>Oráculos</strong>: Chainlink type or decentralized relay</p>
+</li>
+<li data-line="10" dir="auto"><span class="list-bullet"></span>
+<p><strong>Database local</strong>: SQLite (mobile) para ledger provisório</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="12. MVP Roadmap (prático)" dir="auto" class="heading" id="12._MVP_Roadmap_(prático)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>12. MVP Roadmap (prático)</h2></div><div class="el-ol"><ol>
+<li data-line="0" dir="auto">
+<p><strong>Semana 0–4</strong>: especificação técnica + protótipo do formato de tx + wireframes da wallet.</p>
+</li>
+<li data-line="2" dir="auto">
+<p><strong>Semana 4–12</strong>: protótipo mobile que cria TOs e envia por BLE; simples VL em NodeJS que assina.</p>
+</li>
+<li data-line="4" dir="auto">
+<p><strong>Semana 12–20</strong>: mini-rede local (3 VLs) com LB creation e sincronização para um testnet L1 (Substrate local).</p>
+</li>
+<li data-line="6" dir="auto">
+<p><strong>Semana 20–28</strong>: mecanismo de Trust Score básico e UI de avaliação P2P.</p>
+</li>
+<li data-line="8" dir="auto">
+<p><strong>Semana 28–40</strong>: stress tests offline, ataques simulados, ajustes; criar docs e whitepaper público.</p>
+</li>
+<li data-line="10" dir="auto">
+<p><strong>Lançamento pilot</strong>: 1 comunidade/região (por exemplo, um bairro ou escola) por 6 meses.</p>
+</li>
+</ol></div><div class="el-hr"><hr></div><div class="el-h2"><h2 data-heading="13. Casos de uso (exemplos reais)" dir="auto" class="heading" id="13._Casos_de_uso_(exemplos_reais)_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>13. Casos de uso (exemplos reais)</h2></div><div class="el-ul"><ul class="has-list-bullet">
+<li data-line="0" dir="auto"><span class="list-bullet"></span>
+<p>micropagamentos em mercados sem internet</p>
+</li>
+<li data-line="2" dir="auto"><span class="list-bullet"></span>
+<p>pagamentos escolares (cantina)</p>
+</li>
+<li data-line="4" dir="auto"><span class="list-bullet"></span>
+<p>economia local entre produtores e consumidores rurais</p>
+</li>
+<li data-line="6" dir="auto"><span class="list-bullet"></span>
+<p>programas sociais com distribuição de benefícios controlada por confiança</p>
+</li>
+</ul></div><div class="el-hr"><hr></div><div class="el-h3"><h3 data-heading="Resumo rápido" dir="auto" class="heading" id="Resumo_rápido_0"><span class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></span>Resumo rápido</h3></div><div class="footer"><div class="data-bar"></div></div></div></div></div><div id="right-content" class="leaf" style="--sidebar-width: var(--sidebar-width-right);"><div id="right-sidebar" class="sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme-toggle-input" id=""><input class="theme-toggle-input" type="checkbox" id="theme-toggle-input"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content-wrapper"><div id="right-sidebar-content" class="leaf-content"><div class="graph-view-wrapper"><div class="feature-header"><div class="feature-title">Interactive Graph</div></div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<div class="graph-icon graph-global" role="button" aria-label="Global Graph" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-git-fork"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"></path><path d="M12 12v3"></path></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div id="outline" class=" tree-container"><div class="feature-header"><div class="feature-title">Table Of Contents</div><button class="clickable-icon nav-action-button tree-collapse-all" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-item" data-depth="1"><a class="tree-item-self is-clickable" href="#Whitepaper_Tecnico_v1_0" data-path="#Whitepaper_Tecnico_v1_0"><div class="tree-item-inner heading-link" heading-name="Whitepaper Tecnico v1">Whitepaper Tecnico v1</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="1"><a class="tree-item-self is-clickable mod-collapsible" href="#Proof_of_Local_Trust_(PoLT)_—_Whitepaper_inicial_(resumo_técnico)_0" data-path="#Proof_of_Local_Trust_(PoLT)_—_Whitepaper_inicial_(resumo_técnico)_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="Proof of Local Trust (PoLT) — Whitepaper inicial (resumo técnico)">Proof of Local Trust (PoLT) — Whitepaper inicial (resumo técnico)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#1._Visão_geral_0" data-path="#1._Visão_geral_0"><div class="tree-item-inner heading-link" heading-name="1. Visão geral">1. Visão geral</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#2._Componentes_principais_0" data-path="#2._Componentes_principais_0"><div class="tree-item-inner heading-link" heading-name="2. Componentes principais">2. Componentes principais</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#3._Estrutura_de_dados_(simplificada)_0" data-path="#3._Estrutura_de_dados_(simplificada)_0"><div class="tree-item-inner heading-link" heading-name="3. Estrutura de dados (simplificada)">3. Estrutura de dados (simplificada)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#4._Trust_Score_(TS)_0" data-path="#4._Trust_Score_(TS)_0"><div class="tree-item-inner heading-link" heading-name="4. Trust Score (TS)">4. Trust Score (TS)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#5._Fluxo_de_pagamento_offline_(alto_nível)_0" data-path="#5._Fluxo_de_pagamento_offline_(alto_nível)_0"><div class="tree-item-inner heading-link" heading-name="5. Fluxo de pagamento offline (alto nível)">5. Fluxo de pagamento offline (alto nível)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#6._Anti–Double-Spending_e_resolução_de_conflitos_0" data-path="#6._Anti–Double-Spending_e_resolução_de_conflitos_0"><div class="tree-item-inner heading-link" heading-name="6. Anti–Double-Spending e resolução de conflitos">6. Anti–Double-Spending e resolução de conflitos</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#7._Incentivos_e_Tokenomics_0" data-path="#7._Incentivos_e_Tokenomics_0"><div class="tree-item-inner heading-link" heading-name="7. Incentivos e Tokenomics">7. Incentivos e Tokenomics</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#8._Segurança_—_ameaças_e_proteções_0" data-path="#8._Segurança_—_ameaças_e_proteções_0"><div class="tree-item-inner heading-link" heading-name="8. Segurança — ameaças e proteções">8. Segurança — ameaças e proteções</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#9._Regras_de_governança_e_parâmetros_ajustáveis_0" data-path="#9._Regras_de_governança_e_parâmetros_ajustáveis_0"><div class="tree-item-inner heading-link" heading-name="9. Regras de governança e parâmetros ajustáveis">9. Regras de governança e parâmetros ajustáveis</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#10._APIs_e_interfaces_(MVP)_0" data-path="#10._APIs_e_interfaces_(MVP)_0"><div class="tree-item-inner heading-link" heading-name="10. APIs e interfaces (MVP)">10. APIs e interfaces (MVP)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#11._Tecnologia_sugerida_(stack)_0" data-path="#11._Tecnologia_sugerida_(stack)_0"><div class="tree-item-inner heading-link" heading-name="11. Tecnologia sugerida (stack)">11. Tecnologia sugerida (stack)</div></a><div class="tree-item-children"></div></div><div class="tree-item" data-depth="2"><a class="tree-item-self is-clickable" href="#12._MVP_Roadmap_(prático)_0" data-path="#12._MVP_Roadmap_(prático)_0"><div class="tree-item-inner heading-link" heading-name="12. MVP Roadmap (prático)">12. MVP Roadmap (prático)</div></a><div class="tree-item-children"></div></div><div class="tree-item mod-collapsible" data-depth="2"><a class="tree-item-self is-clickable mod-collapsible" href="#13._Casos_de_uso_(exemplos_reais)_0" data-path="#13._Casos_de_uso_(exemplos_reais)_0"><div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><div class="tree-item-inner heading-link" heading-name="13. Casos de uso (exemplos reais)">13. Casos de uso (exemplos reais)</div></a><div class="tree-item-children"><div class="tree-item" data-depth="3"><a class="tree-item-self is-clickable" href="#Resumo_rápido_0" data-path="#Resumo_rápido_0"><div class="tree-item-inner heading-link" heading-name="Resumo rápido">Resumo rápido</div></a><div class="tree-item-children"></div></div></div></div></div></div></div></div></div><script defer="">{ let rs = document.querySelector("#right-sidebar"); rs.classList.toggle("is-collapsed", window.innerWidth < 768); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width")); }</script></div></div></div></div></body></html>

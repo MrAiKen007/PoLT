@@ -1,0 +1,17 @@
+{
+  "name": "polt-docs",
+  "version": "1.0.0",
+  "description": "Documentação PoLT - Proof of Local Trust",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite preview",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "vite": "^7.2.7"
+  }
+}
