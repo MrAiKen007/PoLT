@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "live-server": "^1.2.2",
-    "vite": "^7.2.7"
+    "vite": "^7.2.7",
+    "vite-plugin-static-copy": "^3.1.4"
   }
 }
